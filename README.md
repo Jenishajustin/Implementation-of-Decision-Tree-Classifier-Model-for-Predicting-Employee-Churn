@@ -36,7 +36,6 @@ df.head()
 
 x=df[["satisfaction_level","last_evaluation","number_project","average_montly_hours","time_spend_company","Work_accident","promotion_last_5years","salary"]]
 x.head()
-
 y=df["left"]
 
 from sklearn.model_selection import train_test_split
@@ -50,9 +49,7 @@ y_pred=dt.predict(x_test)
 from sklearn import metrics
 accuracy=metrics.accuracy_score(y_test,y_pred)
 print("Accuracy : ",accuracy)
-
 dt.predict([[0.5,0.8,9,260,6,0,1,2]])
-
 ```
 ## Output:
 #### Dataset
@@ -64,7 +61,6 @@ dt.predict([[0.5,0.8,9,260,6,0,1,2]])
 #### Label Encoding for string values
 <img src="https://github.com/Jenishajustin/Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn/assets/119405070/543ada14-73a3-403b-b7cf-56fdca6741fd" height=200 width=800>
 <br>
-
 <img src="https://github.com/Jenishajustin/Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn/assets/119405070/59912ecf-4d98-4ed0-8dde-e3ad080eca98" height=200 width=800>
 
 #### Accuracy
